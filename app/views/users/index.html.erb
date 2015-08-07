@@ -1,16 +1,30 @@
-<div class="container">
-  <div class="row">
-    <h3>Users</h3>
+<!-- Page Heading -->
+<div class="row">
+  <div class="col-lg-12">
+    <h1 class="page-header">
+      Users <small>User Management</small>
+    </h1>
+    <ol class="breadcrumb">
+      <li>
+        <i class="fa fa-fw fa-dashboard"></i> <a href="#">Dashboard</a>
+      </li>
+      <li class="active">
+        <i class="fa fa-fw fa-users"></i> Users
+      </li>
+    </ol>
+  </div>
+</div>
+<!-- /.row -->
+<div class="row">
     <div class="column">
       <table class="table">
         <tbody>
-          <% @users.each do |user| %>
+        <% @users.each do |user| %>
             <tr>
               <%= render user %>
             </tr>
-          <% end %>
+        <% end %>
         </tbody>
       </table>
     </div>
-  </div>
 </div>

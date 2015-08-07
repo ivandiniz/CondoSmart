@@ -15,6 +15,7 @@ end
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'devise_invitable'
+gem 'font-awesome-sass'
 group :development do
   gem 'better_errors'
   gem 'quiet_assets'
